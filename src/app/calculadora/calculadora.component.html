@@ -1,0 +1,12 @@
+<h1>Mini calculadora</h1>
+
+<form>
+    Numero 1:
+    <input type="number" name="num1" value={{num1}} [(ngModel)] = "num1"/> <br>
+    Numero 2:
+    <input type="number" name="num2" value={{num2}} [(ngModel)] = "num2"/> <br> <br>
+    <input class="btn btn-primary" type="button" name="sumar" value="Sumar" (click)="Sumar()"/>
+    <input class="btn btn-primary" type="button" name="restar" value="Restar" (click)="Restar() "/>
+</form>
+<br>
+Resultado: {{result}}
